@@ -1,2 +1,1 @@
-# OhmyFood
-Projet3 : Site Web OhMyFood
+Projet n°3 : OhMyFood
