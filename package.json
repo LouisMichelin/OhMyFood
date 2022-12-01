@@ -1,0 +1,22 @@
+{
+  "name": "projet3-ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet n°3 : OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./styles/sass/main.scss ./styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LouisMichelin/OhmyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LouisMichelin/OhmyFood/issues"
+  },
+  "homepage": "https://github.com/LouisMichelin/OhmyFood#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
