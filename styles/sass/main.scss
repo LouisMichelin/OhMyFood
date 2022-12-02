@@ -1,5 +1,41 @@
-$background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
 
-body {
-    background-color: $background-color;
+/*Backgrounds : gris très clair > gris clair > gris foncé*/
+$background-color-gris-1: #F7F7F7; /*background du site + menus*/
+$background-color-gris-2: #EAEAEA; /*<div> ville choisie*/
+$background-color-gris-3: #353535; /*<footer>*/
+
+/*Couleurs Flashy */
+$couleur-primaire: #9356DC;
+$couleur-secondaire: #FF79DA;
+$couleur-tertiaire: #99E2D0;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+    &:visited {
+        text-decoration: none;
+    }
+}
+header, main, footer {
+    background-color: green;
+    width: auto;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    #OhMyFood {
+        margin: 1.5rem auto 0.5rem;
+        width: 150px;
+    }
+}
+nav {
+    display: flex;
+    justify-content: center;
+    
 }
