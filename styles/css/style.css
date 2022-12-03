@@ -29,6 +29,7 @@ header {
     margin: 1.5rem auto 0.5rem;
     width: 150px; }
 
+/*----------------------------------------------------------------*/
 nav {
   background-color: #EAEAEA;
   height: 3rem;
@@ -52,3 +53,5 @@ nav {
     font-size: 0.9rem;
     font-weight: bold;
     text-align: center; }
+
+/*----------------------------------------------------------------*/
