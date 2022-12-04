@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*Couleurs : Gris très clair > gris clair > gris foncé*/
+/*background du site + menus*/
+/*<div> ville choisie*/
+/*polices + <footer>*/
+/*Couleurs : Flashy */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointers;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  min-width: 375px;
+  width: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+}
+header #OhMyFood {
+  margin: 1.5rem auto 0.5rem;
+  width: 150px;
+}
+
+/*# sourceMappingURL=restaurant.css.map */

@@ -4,7 +4,8 @@
   "description": "Projet n°3 : OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass ./styles/sass/main.scss ./styles/css/style.css -w"
+    "sass": "sass --watch ./sass/index.scss:./css/index.css ./sass/restaurant.scss:./css/restaurant.css"
+
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,6 @@
   },
   "homepage": "https://github.com/LouisMichelin/OhmyFood#readme",
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "sass": "^1.56.1"
   }
 }

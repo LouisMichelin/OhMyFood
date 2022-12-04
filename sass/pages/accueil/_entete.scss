@@ -1,0 +1,65 @@
+/*
+
+nav {
+    background-color: $couleur-gris-2;
+    height: 3rem;
+    color: $couleur-gris-3;
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    i {
+        position: absolute;
+        margin: 0px 140px 5px 0px;
+    }
+    .search-zone-text {
+        min-width: 375px;
+        width: auto;
+        padding-left: 20px;
+        height: 3rem;
+        background-color: transparent;
+    }
+    input[type="search"]::placeholder {
+        font-family: 'Roboto', sans-serif;
+        color: $couleur-gris-3;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.reservation {
+    background-color: $couleur-gris-1;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        margin: 2.25rem 50px 1rem;
+        line-height: 1.15;
+    }
+    h3 {
+        margin: 0 25px 1.75rem;
+        line-height: 1.05;
+        color: $couleur-gris-3;
+        font-weight: lighter;
+    }
+    .explorer {
+        display: flex;
+        justify-content: center;      
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            width: 225px;
+            border-radius: 25px;
+            background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+            color: white;
+            
+        }
+    }
+}
+*/
