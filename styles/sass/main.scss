@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
 
 /*Couleurs : Gris très clair > gris clair > gris foncé*/
 $couleur-gris-1: #F7F7F7; /*background du site + menus*/
@@ -20,8 +20,13 @@ a {
     &:visited {
         text-decoration: none;
     }
+    &:hover {
+        cursor: pointers;
+    }
 }
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     min-width: 375px;
     width: auto;
@@ -67,5 +72,35 @@ nav {
 }
 /*----------------------------------------------------------------*/
 .reservation {
-    
+    background-color: $couleur-gris-1;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        margin: 2.25rem 50px 1rem;
+        line-height: 1.15;
+    }
+    h3 {
+        margin: 0 25px 2rem;
+        line-height: 1.05;
+        color: $couleur-gris-3;
+        font-weight: lighter;
+    }
+    .explorer {
+        display: flex;
+        justify-content: center;      
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            width: 225px;
+            border-radius: 25px;
+            background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+            color: white;
+            
+        }
+    }
 }
