@@ -1,0 +1,13 @@
+.fonctionnement {
+    h2 {
+        margin: 45px 0px 20px 20px;
+    }
+    &__menu {
+        
+        &--bouton {
+            display: flex;
+            justify-content: center;
+            background-color: $couleur-gris-1;
+        }
+    }
+}

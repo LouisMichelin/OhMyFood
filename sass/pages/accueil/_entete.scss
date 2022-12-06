@@ -1,4 +1,4 @@
-nav {
+.entete {
     background-color: $couleur-gris-2;
     height: 50px;
     color: $couleur-gris-3;
@@ -7,23 +7,25 @@ nav {
         align-items: center;
         justify-content: center;
     }
-    i {
-        position: absolute;
-        margin: 0px 140px 5px 0px;
-    }
-    .search-zone-text {
-        width: 100%;
-        padding-left: 20px;
-        height: 50px;
-        background-color: transparent;
-    }
-    input[type="search"]::placeholder {
-        font-family: 'Roboto', sans-serif;
-        color: $couleur-gris-3;
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-    }
+        i {
+            position: absolute;
+            margin: 0px 140px 5px 0px;
+        }
+        .search-zone-text {
+            width: 100%;
+            padding-left: 20px;
+            height: 50px;
+            background-color: transparent;
+            text-align: center;
+            font-weight: bold;
+        }
+        input[type="search"]::placeholder {
+            font-family: 'Roboto', sans-serif;
+            color: $couleur-gris-3;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
 }
 .reservation {
     background-color: $couleur-gris-1;

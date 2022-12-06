@@ -1,9 +1,3 @@
-@charset "UTF-8";
-/*Couleurs : Gris très clair > gris clair > gris foncé*/
-/*background du site + menus*/
-/*<div> ville choisie*/
-/*polices + <footer>*/
-/*Couleurs : Flashy */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 * {
   margin: 0;
@@ -41,27 +35,29 @@ header #OhMyFood {
   width: 40%;
 }
 
-nav {
+.entete {
   background-color: #EAEAEA;
   height: 50px;
   color: #353535;
 }
-nav form {
+.entete form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-nav i {
+.entete i {
   position: absolute;
   margin: 0px 140px 5px 0px;
 }
-nav .search-zone-text {
+.entete .search-zone-text {
   width: 100%;
   padding-left: 20px;
   height: 50px;
   background-color: transparent;
+  text-align: center;
+  font-weight: bold;
 }
-nav input[type=search]::placeholder {
+.entete input[type=search]::placeholder {
   font-family: "Roboto", sans-serif;
   color: #353535;
   font-size: 15px;
@@ -101,6 +97,15 @@ nav input[type=search]::placeholder {
   border-radius: 25px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+}
+
+.fonctionnement h2 {
+  margin: 45px 0px 20px 20px;
+}
+.fonctionnement__menu--bouton {
+  display: flex;
+  justify-content: center;
+  background-color: #F7F7F7;
 }
 
 /*# sourceMappingURL=index.css.map */
