@@ -1,13 +1,44 @@
 .fonctionnement {
-    h2 {
-        margin: 45px 0px 20px 20px;
+    margin-bottom: 50px;
+    h2 { 
+        margin: 45px 0px 15px 15px;
     }
     &__menu {
-        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         &--bouton {
             display: flex;
+            align-items: center;
             justify-content: center;
+            border-radius: 25px;
+            margin: 12.5px auto 12.5px;
             background-color: $couleur-gris-1;
+            height: 70px;
+            width: 85%;
+            filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.1));    
+            .numero {
+                position:absolute;
+                margin-right: 100%;
+                background-color: $couleur-primaire;
+                color: white;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 22px;
+                height: 22px;
+                border-radius: 25px;
+            }
+            i {
+                position: absolute;
+                margin-right: 75%;
+                color: $couleur-gris-4;
+                font-size: 20px;
+            }
+            p {
+                font-weight: bold;
+            }
         }
     }
 }
