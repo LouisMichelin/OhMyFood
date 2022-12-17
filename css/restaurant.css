@@ -36,4 +36,12 @@ header #OhMyFood {
   width: 40%;
 }
 
+footer {
+  color: white;
+  background-color: #353535;
+}
+footer .ohmyfood {
+  font-family: "Shrikhand";
+}
+
 /*# sourceMappingURL=restaurant.css.map */
