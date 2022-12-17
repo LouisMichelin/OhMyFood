@@ -1,7 +1,29 @@
 footer {
+    height: 200px;
     color: white;
     background-color: $couleur-gris-3;
+}
+.footer {
+    margin: 25px;
     .ohmyfood {
-        font-family: 'Shrikhand';
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &--link {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            height: 15px;
+            i {
+                width: 15px;
+                font-size: 15px;
+            }
+        }
     }
 }

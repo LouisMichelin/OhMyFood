@@ -37,11 +37,34 @@ header #OhMyFood {
 }
 
 footer {
+  height: 200px;
   color: white;
   background-color: #353535;
 }
-footer .ohmyfood {
-  font-family: "Shrikhand";
+
+.footer {
+  margin: 25px;
+}
+.footer .ohmyfood {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__infos--link {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 15px;
+}
+.footer__infos--link i {
+  width: 15px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=restaurant.css.map */
