@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    .fleche-retour {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        min-width: 65px;
+        i {
+            color: $couleur-gris-3;
+        }
+    }
+    #OhMyFood {
+        /*Z INDEX POUR RENDRE LE TITRE AU DESSUS DE TOUT*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

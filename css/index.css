@@ -270,6 +270,7 @@ footer {
 }
 .restaurant__liste--carte .description .heart .fa-regular {
   opacity: 1;
+  color: black;
 }
 .restaurant__liste--carte .description .heart .fa-regular:hover {
   opacity: 0;
@@ -279,6 +280,15 @@ footer {
 }
 .restaurant__liste--carte .description .heart .fa-solid:hover {
   opacity: 1;
+  background: linear-gradient(25deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  z-index: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
 }
 
 /*# sourceMappingURL=index.css.map */

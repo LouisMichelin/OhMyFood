@@ -83,6 +83,7 @@
 
                     .fa-regular {
                         opacity: 1;
+                        color: black;
                         &:hover {
                             opacity: 0;
                         }
@@ -92,6 +93,15 @@
                         opacity: 0;
                         &:hover {
                             opacity: 1;
+                            background: linear-gradient(25deg, #FF79DA 0%, #9356DC 100%);
+                            background-clip: content-box;
+                            -webkit-background-clip: text;
+                            -moz-background-clip: text;
+                            color: transparent;
+                            z-index: 1;
+                            transform-origin: 50% bottom;
+                            transform: scale(1);
+                            animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
                         }
                     }
                 }
