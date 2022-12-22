@@ -271,8 +271,14 @@ footer {
 .restaurant__liste--carte .description .heart .fa-regular {
   opacity: 1;
 }
+.restaurant__liste--carte .description .heart .fa-regular:hover {
+  opacity: 0;
+}
 .restaurant__liste--carte .description .heart .fa-solid {
   opacity: 0;
+}
+.restaurant__liste--carte .description .heart .fa-solid:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
