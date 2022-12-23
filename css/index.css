@@ -32,15 +32,34 @@ h1, h2, h3, h4, h5, p {
 
 header {
   display: flex;
-  justify-content: center;
-  background-color: white;
-  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 65px;
 }
-header #OhMyFood {
+header .logo {
   display: flex;
   justify-content: center;
-  margin: 25px auto 10px;
-  width: 40%;
+  align-items: center;
+  height: auto;
+  width: auto;
+  flex: 1;
+  padding: 10px;
+}
+header .logo #OhMyFood {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+header .fleche-retour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+}
+header .fleche-retour i {
+  color: #353535;
 }
 
 footer {
@@ -191,21 +210,6 @@ footer {
   font-weight: bold;
 }
 
-.photo .new {
-  margin-top: 12.5px;
-  margin-left: 72.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  color: #2A7A67;
-  background-color: #99E2D0;
-  border-radius: 2px;
-  width: 80px;
-  height: 30px;
-  font-size: 14px;
-}
-
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -240,6 +244,20 @@ footer {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
+}
+.restaurant__liste--carte .photo .new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #2A7A67;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
 }
 .restaurant__liste--carte .description {
   height: 25%;

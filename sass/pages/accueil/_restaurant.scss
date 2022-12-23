@@ -1,17 +1,4 @@
-.photo .new {
-    margin-top: 12.5px;
-    margin-left: 72.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: $couleur-new-text;
-    background-color: $couleur-new-background;
-    border-radius: 2px;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-}
+
 
 .restaurant {
     display: flex;
@@ -48,6 +35,22 @@
                     width: 100%;
                     border-radius: 15px 15px 0px 0px;
                     object-fit: cover;
+                }
+
+                .new {
+                   
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    right:10px;
+                    top:10px;
+                    color: $couleur-new-text;
+                    background-color: $couleur-new-background;
+                    border-radius: 2px;
+                    width: 80px;
+                    height: 30px;
+                    font-size: 14px;
                 }
 
             }
