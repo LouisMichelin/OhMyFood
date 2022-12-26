@@ -2,34 +2,34 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width:100%;
-    height:65px;
+    width: 100%;
+    height: 65px;
 
-    .logo{
+    .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         height: auto;
-        width:auto;
-        flex:1;
-        
+        width: auto;
+        flex: 1;
         padding: 10px;
-        #OhMyFood{
+        
+        #OhMyFood {
             width: 100%;
-            height: 100%;
+            scale: 0.5;
             object-fit: contain;
         }
-}
+    }
+
     .fleche-retour {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 65px;
         width: 65px;
+
         i {
             color: $couleur-gris-3;
         }
-        
     }
-  
 }
