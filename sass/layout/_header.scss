@@ -12,16 +12,17 @@ header {
         height: auto;
         width: auto;
         flex: 1;
-        padding: 10px;
         
         #OhMyFood {
             width: 100%;
-            scale: 0.5;
+            padding: 10px;
+            max-height: 30px;
             object-fit: contain;
         }
     }
 
     .fleche-retour {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
