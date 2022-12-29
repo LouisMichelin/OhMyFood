@@ -1,49 +1,49 @@
 .menu-restaurant {
-
-    
+    display: flex;
+    flex-direction: column;
+    background-color: $couleur-gris-1;
 }
 
 .categorieRepas {
-    background-color: $couleur-gris-1;
-
-
-
-
-
-
 
     .choixRepas {
-        
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         height: 70px;
         border-radius: 15px;
         background-color: white;
-        display: flex;
-        flex-direction: row;
+
         &:hover {
             cursor: pointer;
 
             .boutonChoisir {
+                display: flex;
                 opacity: 1;
                 position: absolute;
+            }
+
+            .prixRepas {
+                right: 80px;
             }
         }
 
         .platRepas {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             flex-direction: column;
-            margin-left: 10px;
+            margin: 10px;
         }
 
         .prixRepas {
-            display: flex;
-            align-items:flex-end;
-            margin-bottom: 15px;
+            position: relative;
+            top: 37.5px;
+            right: 20px;
+            font-weight: bold;
         }
 
         .boutonChoisir {
-            display: flex;
+            display: none;
             right: 0px;
             justify-content: center;
             align-items: center;
@@ -51,12 +51,10 @@
             height: 70px;
             border-radius: 0 15px 15px 0;
             background-color: $couleur-tertiaire;
-            opacity: 0;
+
             i {
                 color: white;
             }
         }
     }
-
 }
-

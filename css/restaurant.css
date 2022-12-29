@@ -163,37 +163,45 @@ footer {
   animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
 }
 
-.categorieRepas {
+.menu-restaurant {
+  display: flex;
+  flex-direction: column;
   background-color: #F7F7F7;
 }
+
 .categorieRepas .choixRepas {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 70px;
   border-radius: 15px;
   background-color: white;
-  display: flex;
-  flex-direction: row;
 }
 .categorieRepas .choixRepas:hover {
   cursor: pointer;
 }
 .categorieRepas .choixRepas:hover .boutonChoisir {
+  display: flex;
   opacity: 1;
   position: absolute;
 }
+.categorieRepas .choixRepas:hover .prixRepas {
+  right: 80px;
+}
 .categorieRepas .choixRepas .platRepas {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-  margin-left: 10px;
+  margin: 10px;
 }
 .categorieRepas .choixRepas .prixRepas {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 15px;
+  position: relative;
+  top: 37.5px;
+  right: 20px;
+  font-weight: bold;
 }
 .categorieRepas .choixRepas .boutonChoisir {
-  display: flex;
+  display: none;
   right: 0px;
   justify-content: center;
   align-items: center;
@@ -201,7 +209,6 @@ footer {
   height: 70px;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
-  opacity: 0;
 }
 .categorieRepas .choixRepas .boutonChoisir i {
   color: white;
