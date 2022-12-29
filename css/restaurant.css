@@ -163,4 +163,33 @@ footer {
   animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
 }
 
+.categoriesRepas {
+  background-color: #F7F7F7;
+}
+.categoriesRepas .choixRepas {
+  width: 100%;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.categoriesRepas .choixRepas .platRepas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.categoriesRepas .choixRepas .prixRepas {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+.categoriesRepas .choixRepas .boutonChoisir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 70px;
+  background-color: red;
+}
+
 /*# sourceMappingURL=restaurant.css.map */
