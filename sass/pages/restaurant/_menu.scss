@@ -3,7 +3,7 @@
     
 }
 
-.categoriesRepas {
+.categorieRepas {
     background-color: $couleur-gris-1;
 
 
@@ -13,16 +13,27 @@
 
 
     .choixRepas {
+        
         width: 100%;
-        border-radius: 25px;
+        height: 70px;
+        border-radius: 15px;
         background-color: white;
         display: flex;
         flex-direction: row;
+        &:hover {
+            cursor: pointer;
+
+            .boutonChoisir {
+                opacity: 1;
+                position: absolute;
+            }
+        }
 
         .platRepas {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            margin-left: 10px;
         }
 
         .prixRepas {
@@ -31,16 +42,19 @@
             margin-bottom: 15px;
         }
 
-
         .boutonChoisir {
             display: flex;
+            right: 0px;
             justify-content: center;
             align-items: center;
             width: 60px;
             height: 70px;
-            background-color: red;
-            
-    
+            border-radius: 0 15px 15px 0;
+            background-color: $couleur-tertiaire;
+            opacity: 0;
+            i {
+                color: white;
+            }
         }
     }
 
