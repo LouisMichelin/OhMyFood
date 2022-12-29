@@ -100,7 +100,7 @@ footer {
 }
 
 .image-restaurant {
-  height: 300px;
+  height: 265px;
   background-color: #F7F7F7;
 }
 .image-restaurant .imageBackground img {
@@ -176,6 +176,7 @@ footer {
   width: fit-content;
 }
 .categorieRepas .titreCategorie h3 {
+  margin-top: 30px;
   font-weight: normal;
   width: 50%;
   border-bottom: 3px solid #99E2D0;
@@ -197,7 +198,6 @@ footer {
   display: flex;
   opacity: 1;
   position: absolute;
-  right: 15px;
 }
 .categorieRepas .choixRepas:hover .prixRepas {
   right: 80px;

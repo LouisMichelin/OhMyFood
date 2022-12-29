@@ -6,17 +6,18 @@
 
 .categorieRepas {
     margin: 0 15px 0 15px;
-    
+
     .titreCategorie {
         width: fit-content;
 
         h3 {
+            margin-top: 30px;
             font-weight: normal;
             width: 50%;
-            border-bottom: 3px solid $couleur-tertiaire; 
+            border-bottom: 3px solid $couleur-tertiaire;
         }
     }
-    
+
     .choixRepas {
         display: flex;
         flex-direction: row;
@@ -34,7 +35,7 @@
                 display: flex;
                 opacity: 1;
                 position: absolute;
-                right: 15px;
+                
             }
 
             .prixRepas {
