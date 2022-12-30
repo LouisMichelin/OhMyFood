@@ -25,7 +25,7 @@
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 
             .photo {
-                height: 75%;
+                height: 70%;
                 width: 100%;
 
                 img {
@@ -52,7 +52,7 @@
             }
 
             .description {
-                height: 25%;
+                height: 30%;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -64,7 +64,7 @@
                     align-items: start;
                     flex-direction: column;
                     gap: 5px;
-                    padding-left: 20px;
+                    padding-left: 15px;
                 }
 
                 .heart {

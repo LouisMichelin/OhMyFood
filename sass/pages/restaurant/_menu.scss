@@ -8,12 +8,12 @@
     margin: 0 15px 0 15px;
 
     .titreCategorie {
-        width: fit-content;
-
         h3 {
             margin-top: 30px;
             font-weight: normal;
-            width: 50%;
+            font-size: 17px;
+            width: 40px;
+            padding-bottom: 5px;
             border-bottom: 3px solid $couleur-tertiaire;
         }
     }
