@@ -201,7 +201,8 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.categorieRepas .choixRepas .platRepas h4, .categorieRepas .choixRepas .platRepas p {
+.categorieRepas .choixRepas .platRepas h4,
+.categorieRepas .choixRepas .platRepas p {
   margin-left: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
