@@ -162,11 +162,39 @@ footer {
   transform: scale(1);
   animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
 }
+@media screen and (min-width: 768px) {
+  .image-restaurant .titre {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .image-restaurant .titre {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+main {
+  background-color: #F7F7F7;
+}
 
 .menu-restaurant {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
+}
+@media screen and (min-width: 768px) {
+  .menu-restaurant {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-restaurant {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 .categorieRepas {

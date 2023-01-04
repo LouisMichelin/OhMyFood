@@ -1,7 +1,18 @@
+main {
+    background-color: $couleur-gris-1;
+}
 .menu-restaurant {
     display: flex;
     flex-direction: column;
     background-color: $couleur-gris-1;
+    @media screen and (min-width: 768px) {
+        width: 85%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 992px) {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 .categorieRepas {
