@@ -21,6 +21,11 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+        @media screen and (min-width: 992px) {
+            justify-content: space-evenly;
+            
+        }
+       
 
         &--carte {
             display: flex;
@@ -33,7 +38,10 @@
             @media screen and (min-width: 768px) {
                 width: 48.5%;
             }
-
+            @media screen and (min-width: 992px) {
+                width: 23%;
+            }
+           
             .photo {
                 height: 70%;
                 width: 100%;

@@ -246,6 +246,11 @@ footer {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 992px) {
+  .restaurant__liste {
+    justify-content: space-evenly;
+  }
+}
 .restaurant__liste--carte {
   display: flex;
   flex-direction: column;
@@ -257,6 +262,11 @@ footer {
 @media screen and (min-width: 768px) {
   .restaurant__liste--carte {
     width: 48.5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__liste--carte {
+    width: 23%;
   }
 }
 .restaurant__liste--carte .photo {
