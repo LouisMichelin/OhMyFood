@@ -196,6 +196,16 @@ main {
     margin: 0 auto;
   }
 }
+.menu-restaurant .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .menu-restaurant .menu {
+    flex-direction: row;
+  }
+}
 
 .categorieRepas {
   margin: 0 15px 0 15px;
@@ -213,11 +223,17 @@ main {
   flex-direction: row;
   justify-content: space-between;
   height: 70px;
+  width: auto;
   border-radius: 15px;
   background-color: white;
   margin: 15px 0;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.075));
   overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .categorieRepas .choixRepas {
+    width: 300px;
+  }
 }
 .categorieRepas .choixRepas .platRepas {
   display: flex;

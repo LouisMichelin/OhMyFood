@@ -136,7 +136,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 .reservation h2 {
   margin: 45px 50px 15px;
@@ -264,9 +264,9 @@ footer {
     width: 48.5%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .restaurant__liste--carte {
-    width: 23%;
+    width: 23.5%;
   }
 }
 .restaurant__liste--carte .photo {
