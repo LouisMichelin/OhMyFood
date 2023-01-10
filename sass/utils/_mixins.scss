@@ -44,11 +44,37 @@
 
 @mixin loading-page {
     .loader {
+        /*----------------------------------------------*/
+        /*DISPLAY:NONE ESSENTIEL APRES ANIMATION !!!!*/
+            /*display:none;*/
+        /*----------------------------------------------*/
         position: fixed;
         z-index: 1337;
         opacity: 100%;
         background-color: $couleur-gris-1;
         width: 100%;
         height: 100%;
+        padding-top: 275px;
+        &__animations {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            &--ohmyfood {
+                color: $couleur-primaire;
+                font-family: 'Shrikhand', sans-serif;
+                font-size: 50px;
+            }
+
+            &--cercle {
+                border: 10px solid cyan;
+                border-right: 10px solid $couleur-primaire;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
     }
 }
