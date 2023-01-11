@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    @include loading-page;
 }
 
 a {
@@ -25,6 +24,7 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    @include loading-page;
 }
 
 h1,
