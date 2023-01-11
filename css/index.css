@@ -374,6 +374,9 @@ footer {
   align-items: center;
   position: relative;
 }
+.restaurant__liste--carte .description .heart:hover {
+  cursor: pointer;
+}
 .restaurant__liste--carte .description .heart i {
   font-size: 25px;
   width: 25px;
