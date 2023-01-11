@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@keyframes loading-text {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loading-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +44,8 @@
   color: #9356DC;
   font-family: "Shrikhand", sans-serif;
   font-size: 50px;
+  transform: scale(1);
+  animation: 2.5s ease-in-out loading-text;
 }
 * .loader__animations--cercle {
   border: 10px solid cyan;
@@ -35,6 +53,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  animation: 1.25s linear loading-circle infinite;
 }
 
 a {
