@@ -7,7 +7,7 @@
     transform: scale(1);
   }
 }
-@keyframes loading-circle {
+@keyframes loading-cercle {
   0% {
     transform: rotate(0deg);
   }
@@ -19,7 +19,7 @@
   0% {
     opacity: 100%;
   }
-  50% {
+  70% {
     opacity: 100%;
   }
   100% {
@@ -81,7 +81,7 @@ body .loader__animations--cercle {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  animation: 1.25s linear loading-circle infinite;
+  animation: 1.25s linear loading-cercle infinite;
 }
 
 h1,
