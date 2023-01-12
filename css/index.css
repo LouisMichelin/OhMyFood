@@ -59,7 +59,7 @@ body .loader {
   width: 100%;
   height: 100%;
   padding-top: 200px;
-  animation: 3s linear 1 loading-fade forwards;
+  animation: 2.5s linear loading-fade forwards;
 }
 body .loader__animations {
   display: flex;
@@ -73,11 +73,11 @@ body .loader__animations--ohmyfood {
   font-family: "Shrikhand", sans-serif;
   font-size: 50px;
   transform: scale(1);
-  animation: 2s ease-in-out 1 loading-text;
+  animation: 1.75s ease-in-out 1 loading-text;
 }
 body .loader__animations--cercle {
-  border: 10px solid cyan;
-  border-right: 10px solid #9356DC;
+  border: 7.5px solid cyan;
+  border-right: 7.5px solid #9356DC;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -212,16 +212,27 @@ footer {
 .reservation .explorer {
   display: flex;
   justify-content: center;
+  height: 50px;
+  width: 225px;
+  border-radius: 25px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+  transition: filter linear 250ms;
+}
+.reservation .explorer:hover {
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.7));
+  background: linear-gradient(to bottom right, #ff7eda, #985bdc);
+  /*
+  couleurs initiales: #FF79DA, #9356DC
+  couleurs initiales +5rgb: #ff7eda, #985bdc
+  couleurs initiales +10rgb: #ff83da, #9d60dc
+  couleurs initiales +15rgb: #ff88da, #a265dc
+  */
 }
 .reservation .explorer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 225px;
-  border-radius: 25px;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
 }
 
