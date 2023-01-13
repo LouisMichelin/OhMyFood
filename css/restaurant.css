@@ -28,6 +28,19 @@
     z-index: -1;
   }
 }
+@keyframes kf-menu-animation {
+  0% {
+    opacity: 0%;
+    transform: translateY(1000px);
+  }
+  50% {
+    opacity: 33%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +72,7 @@ body .loader {
   width: 100%;
   height: 100%;
   padding-top: 200px;
-  animation: 2.5s linear loading-fade forwards;
+  animation: 2.25s linear loading-fade forwards;
 }
 body .loader__animations {
   display: flex;
@@ -130,6 +143,7 @@ header .fleche-retour i {
 }
 
 footer {
+  z-index: 2;
   height: 200px;
   color: white;
   background-color: #353535;
@@ -180,14 +194,17 @@ footer {
   padding-top: 30px;
   border-radius: 50px 50px 0 0;
   background-color: #F7F7F7;
+  z-index: 2;
 }
 .image-restaurant .titre h2 {
+  animation: kf-menu-animation 1.25s ease-out;
   font-size: 27px;
   height: 30px;
   margin-left: 20px;
   font-family: "Shrikhand", sans-serif;
 }
 .image-restaurant .titre .heart {
+  animation: kf-menu-animation 1.25s ease-out;
   display: flex;
   align-items: center;
   position: relative;
@@ -260,6 +277,7 @@ main {
 }
 
 .categorieRepas {
+  animation: kf-menu-animation 1.25s ease-out;
   margin: 0 15px 0 15px;
 }
 .categorieRepas .titreCategorie h3 {
@@ -324,7 +342,7 @@ main {
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   margin-right: -70px;
-  transition-duration: 0.9s;
+  transition-duration: 0.75s;
 }
 .categorieRepas .choixRepas .boutonChoisir i {
   color: white;
@@ -333,7 +351,7 @@ main {
   margin-right: 0px;
 }
 .categorieRepas .choixRepas:hover .fa-circle-check {
-  transition: all 0.3s 0.3s;
+  transition: all 0.4s 0.4s;
   transform: rotate(360deg);
 }
 
@@ -344,6 +362,7 @@ main {
   align-items: center;
 }
 .passer-commande .boutonCommander {
+  animation: kf-menu-animation 1.25s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -354,11 +373,11 @@ main {
   color: white;
   border-radius: 40px;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
-  transition: filter linear 250ms;
+  transition: filter linear 300ms;
 }
 .passer-commande .boutonCommander:hover {
-  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.7));
-  background: linear-gradient(to bottom right, #ff7eda, #985bdc);
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.75));
+  background: linear-gradient(to bottom right, #ff7eda, #9d60dc);
   /*
   couleurs initiales: #FF79DA, #9356DC
   couleurs initiales +5rgb: #ff7eda, #985bdc

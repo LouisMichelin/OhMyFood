@@ -3,6 +3,8 @@ main {
 }
 
 .menu-restaurant {
+    
+
     display: flex;
     flex-direction: column;
     background-color: $couleur-gris-1;
@@ -24,6 +26,7 @@ main {
 }
 
 .categorieRepas {
+    @include menu-animation;
     margin: 0 15px 0 15px;
 
     .titreCategorie {
@@ -94,7 +97,7 @@ main {
             border-radius: 0 15px 15px 0;
             background-color: $couleur-tertiaire;
             margin-right: -70px;
-            transition-duration: 0.9s;
+            transition-duration: 0.75s;
 
             i {
                 color: white;
@@ -106,7 +109,7 @@ main {
         }
 
         &:hover .fa-circle-check {
-            transition: all 0.3s 0.3s;
+            transition: all 0.4s 0.4s;
             transform: rotate(360deg);
         }
     }

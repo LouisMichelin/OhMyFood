@@ -5,6 +5,8 @@
     align-items: center;
 
     .boutonCommander {
+        @include menu-animation;
+        
         display: flex;
         align-items: center;
         justify-content: center;
