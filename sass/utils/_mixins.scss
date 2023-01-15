@@ -3,10 +3,6 @@
     align-items: center;
     position: relative;
 
-    &:hover {
-        cursor: pointer;
-    }
-
     i {
         font-size: 25px;
         width: 25px;
@@ -14,31 +10,47 @@
         position: absolute;
         right: 20px;
     }
-
+    
     .fa-regular {
         opacity: 1;
         color: black;
-
+        z-index: 2;
         &:hover {
             opacity: 0;
+            z-index: 0;
+            + .fa-solid {
+                opacity: 1;
+                animation: heartFull 0.5s linear both;
+            }
         }
     }
-
+    
     .fa-solid {
         opacity: 0;
+        z-index: 1;
+        background: linear-gradient(25deg, #FF79DA 0%, #9356DC 100%);
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+        transform-origin: 50% bottom;
+        transform: scale(1);
+        animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
 
-        &:hover {
-            opacity: 1;
-            background: linear-gradient(25deg, #FF79DA 0%, #9356DC 100%);
-            background-clip: content-box;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            color: transparent;
-            z-index: 1;
-            transform-origin: 50% bottom;
-            transform: scale(1);
-            animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
-        }
+    }
+
+
+   
+
+
+}
+
+@keyframes heartFull {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
@@ -69,8 +81,8 @@
             }
 
             &--cercle {
-                border: 7.5px solid cyan;
-                border-right: 7.5px solid $couleur-primaire;
+                border: 7.5px solid $couleur-primaire;
+                border-right: 7.5px solid #fff;
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
@@ -113,18 +125,10 @@
 
 @mixin bouton-hover {
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
-    transition: filter linear 300ms;
-    
-    &:hover {
-        filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.75));
-        background: linear-gradient(to bottom right, #ff7eda, #9d60dc);
-        /*
-        couleurs initiales: #FF79DA, #9356DC
-        couleurs initiales +5rgb: #ff7eda, #985bdc
-        couleurs initiales +10rgb: #ff83da, #9d60dc
-        couleurs initiales +15rgb: #ff88da, #a265dc
-        */
-    }
+    &:hover{
+    background: linear-gradient(to bottom right, $couleur-primaire , $couleur-secondaire);
+    filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.5));
+}
 }
 
 @mixin menu-animation {
@@ -132,14 +136,12 @@
 }
 @keyframes kf-menu-animation {
     0% {
-        opacity: 0%;
-        transform: translateY(1000px);
+        opacity: 0;
+        transform: translateY(50%);
     }
-    50% {
-        opacity: 33%;
-    }
+  
     100% {
-        opacity: 100%;
-        transform: translateY(0px);
+        opacity: 1;
+        transform: translateY(0%);
     }
 }

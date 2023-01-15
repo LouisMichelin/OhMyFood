@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@keyframes heartFull {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes loading-text {
   0% {
     transform: scale(0.1);
@@ -30,15 +38,12 @@
 }
 @keyframes kf-menu-animation {
   0% {
-    opacity: 0%;
-    transform: translateY(1000px);
-  }
-  50% {
-    opacity: 33%;
+    opacity: 0;
+    transform: translateY(50%);
   }
   100% {
-    opacity: 100%;
-    transform: translateY(0px);
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 * {
@@ -89,8 +94,8 @@ body .loader__animations--ohmyfood {
   animation: 1.75s ease-in-out 1 loading-text;
 }
 body .loader__animations--cercle {
-  border: 7.5px solid cyan;
-  border-right: 7.5px solid #9356DC;
+  border: 7.5px solid #9356DC;
+  border-right: 7.5px solid #fff;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -197,22 +202,17 @@ footer {
   z-index: 2;
 }
 .image-restaurant .titre h2 {
-  animation: kf-menu-animation 1.25s ease-out;
   font-size: 27px;
   height: 30px;
   margin-left: 20px;
   font-family: "Shrikhand", sans-serif;
 }
 .image-restaurant .titre .heart {
-  animation: kf-menu-animation 1.25s ease-out;
   display: flex;
   align-items: center;
   position: relative;
   right: 25px;
   bottom: 15px;
-}
-.image-restaurant .titre .heart:hover {
-  cursor: pointer;
 }
 .image-restaurant .titre .heart i {
   font-size: 25px;
@@ -224,21 +224,24 @@ footer {
 .image-restaurant .titre .heart .fa-regular {
   opacity: 1;
   color: black;
+  z-index: 2;
 }
 .image-restaurant .titre .heart .fa-regular:hover {
   opacity: 0;
+  z-index: 0;
+}
+.image-restaurant .titre .heart .fa-regular:hover + .fa-solid {
+  opacity: 1;
+  animation: heartFull 0.5s linear both;
 }
 .image-restaurant .titre .heart .fa-solid {
   opacity: 0;
-}
-.image-restaurant .titre .heart .fa-solid:hover {
-  opacity: 1;
+  z-index: 1;
   background: linear-gradient(25deg, #FF79DA 0%, #9356DC 100%);
   background-clip: content-box;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
-  z-index: 1;
   transform-origin: 50% bottom;
   transform: scale(1);
   animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
@@ -276,9 +279,25 @@ main {
   }
 }
 
+.choixRepas:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.choixRepas:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.choixRepas:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.choixRepas:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
 .categorieRepas {
-  animation: kf-menu-animation 1.25s ease-out;
   margin: 0 15px 0 15px;
+  animation: kf-menu-animation 1.25s ease-out;
 }
 .categorieRepas .titreCategorie h3 {
   margin-top: 30px;
@@ -362,7 +381,6 @@ main {
   align-items: center;
 }
 .passer-commande .boutonCommander {
-  animation: kf-menu-animation 1.25s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,17 +391,10 @@ main {
   color: white;
   border-radius: 40px;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
-  transition: filter linear 300ms;
 }
 .passer-commande .boutonCommander:hover {
-  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.75));
-  background: linear-gradient(to bottom right, #ff7eda, #9d60dc);
-  /*
-  couleurs initiales: #FF79DA, #9356DC
-  couleurs initiales +5rgb: #ff7eda, #985bdc
-  couleurs initiales +10rgb: #ff83da, #9d60dc
-  couleurs initiales +15rgb: #ff88da, #a265dc
-  */
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.5));
 }
 
 /*# sourceMappingURL=restaurant.css.map */

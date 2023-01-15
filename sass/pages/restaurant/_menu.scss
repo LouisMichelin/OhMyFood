@@ -25,10 +25,23 @@ main {
     }
 }
 
-.categorieRepas {
-    @include menu-animation;
-    margin: 0 15px 0 15px;
+.choixRepas:nth-child(2){
+    animation-delay: 0.2s
+}
+.choixRepas:nth-child(3){
+    animation-delay: 0.3s
+}
+.choixRepas:nth-child(4){
+    animation-delay: 0.4s
+}
+.choixRepas:nth-child(5){
+    animation-delay: 0.6s
+}
 
+.categorieRepas {
+    margin: 0 15px 0 15px;
+    @include menu-animation;
+   
     .titreCategorie {
         h3 {
             margin-top: 30px;
@@ -41,6 +54,7 @@ main {
     }
 
     .choixRepas {
+       
         display: flex;
         flex-direction: row;
         justify-content: space-between;

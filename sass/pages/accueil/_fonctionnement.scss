@@ -58,6 +58,14 @@
             p {
                 font-weight: bold;
             }
+
+            &:hover{
+                background-color: lighten($couleur-primaire, 35%);
+                .icon{
+                    i{ color: $couleur-primaire};
+                    
+                }
+            }
         }
     }
 }

@@ -23,7 +23,6 @@
         z-index: 2;
 
         h2 {
-            @include menu-animation;
             font-size: 27px;
             height: 30px;
             margin-left: 20px;
@@ -31,7 +30,6 @@
         }
 
         .heart {
-            @include menu-animation;
             @include heart-favoris;
             right: 25px;
             bottom: 15px;
