@@ -59,11 +59,13 @@
                 font-weight: bold;
             }
 
-            &:hover{
+            &:hover {
                 background-color: lighten($couleur-primaire, 35%);
-                .icon{
-                    i{ color: $couleur-primaire};
-                    
+                cursor: pointer;
+                .icon {
+                    i {
+                        color: $couleur-primaire;
+                    }
                 }
             }
         }

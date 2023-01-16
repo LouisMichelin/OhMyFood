@@ -307,6 +307,7 @@ footer {
 }
 .fonctionnement__menu--bouton:hover {
   background-color: #f2eafb;
+  cursor: pointer;
 }
 .fonctionnement__menu--bouton:hover .icon i {
   color: #9356DC;

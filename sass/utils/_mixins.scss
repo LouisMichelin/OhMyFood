@@ -10,21 +10,23 @@
         position: absolute;
         right: 20px;
     }
-    
+
     .fa-regular {
         opacity: 1;
         color: black;
         z-index: 2;
+
         &:hover {
             opacity: 0;
             z-index: 0;
-            + .fa-solid {
+
+            +.fa-solid {
                 opacity: 1;
                 animation: heartFull 0.5s linear both;
             }
         }
     }
-    
+
     .fa-solid {
         opacity: 0;
         z-index: 1;
@@ -36,20 +38,14 @@
         transform-origin: 50% bottom;
         transform: scale(1);
         animation: transform 0.4s cubic-bezier(0.43, 0.21, 1, 0.45);
-
     }
-
-
-   
-
-
 }
-
 @keyframes heartFull {
-    0%{
+    0% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
@@ -64,7 +60,7 @@
         height: 100%;
         padding-top: 200px;
         animation: 2.25s linear loading-fade forwards;
-        
+
         &__animations {
             display: flex;
             flex-direction: column;
@@ -95,18 +91,22 @@
     0% {
         transform: scale(0.1);
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 @keyframes loading-cercle {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
+
 @keyframes loading-fade {
     0% {
         opacity: 100%;
@@ -125,21 +125,23 @@
 
 @mixin bouton-hover {
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
-    &:hover{
-    background: linear-gradient(to bottom right, $couleur-primaire , $couleur-secondaire);
-    filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.5));
-}
+
+    &:hover {
+        background: linear-gradient(to bottom right, $couleur-primaire , $couleur-secondaire);
+        filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.5));
+    }
 }
 
 @mixin menu-animation {
     animation: kf-menu-animation 1.25s ease-out;
 }
+
 @keyframes kf-menu-animation {
     0% {
         opacity: 0;
         transform: translateY(50%);
     }
-  
+
     100% {
         opacity: 1;
         transform: translateY(0%);
