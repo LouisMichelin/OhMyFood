@@ -3,8 +3,6 @@ main {
 }
 
 .menu-restaurant {
-
-
     display: flex;
     flex-direction: column;
     background-color: $couleur-gris-1;
@@ -25,17 +23,16 @@ main {
     }
 }
 
-.choixRepas:nth-child(2) {
-    animation-delay: 0.3s;
+.categorieRepas:nth-child(1) {
+    animation-delay: 0s;
 }
-.choixRepas:nth-child(3) {
-    animation-delay: 0.6s;
+
+.categorieRepas:nth-child(2) {
+    animation-delay: 0.2s;
 }
-.choixRepas:nth-child(4) {
-    animation-delay: 0.9s;
-}
-.choixRepas:nth-child(5) {
-    animation-delay: 1.2s;
+
+.categorieRepas:nth-child(3) {
+    animation-delay: 0.4s;
 }
 
 .categorieRepas {
@@ -54,7 +51,6 @@ main {
     }
 
     .choixRepas {
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -111,19 +107,19 @@ main {
             border-radius: 0 15px 15px 0;
             background-color: $couleur-tertiaire;
             margin-right: -70px;
-            transition-duration: 0.75s;
+            transition-duration: .6s;
 
             i {
                 color: white;
             }
         }
 
-        &:hover>.boutonChoisir {
+        &:hover > .boutonChoisir {
             margin-right: 0px;
         }
 
         &:hover .fa-circle-check {
-            transition: all 0.4s 0.4s;
+            transition: all 0.6s 0.2s;
             transform: rotate(360deg);
         }
     }
