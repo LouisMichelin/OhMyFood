@@ -57,7 +57,7 @@
         position: fixed;
         z-index: 1337;
         opacity: 100%;
-        background-color: $couleur-gris-1;
+        background-color: $couleur-gris-2;
         width: 100%;
         height: 100%;
         padding-top: 200px;
@@ -79,8 +79,8 @@
             }
 
             &--cercle {
-                border: 7.5px solid $couleur-primaire;
-                border-right: 7.5px solid #fff;
+                border: 7.5px solid #fff;
+                border-right: 7.5px solid $couleur-primaire;
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;

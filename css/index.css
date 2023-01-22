@@ -73,7 +73,7 @@ body .loader {
   position: fixed;
   z-index: 1337;
   opacity: 100%;
-  background-color: #F7F7F7;
+  background-color: #EAEAEA;
   width: 100%;
   height: 100%;
   padding-top: 200px;
@@ -94,8 +94,8 @@ body .loader__animations--ohmyfood {
   animation: 1.75s ease-in-out 1 loading-text;
 }
 body .loader__animations--cercle {
-  border: 7.5px solid #9356DC;
-  border-right: 7.5px solid #fff;
+  border: 7.5px solid #fff;
+  border-right: 7.5px solid #9356DC;
   width: 30px;
   height: 30px;
   border-radius: 50%;
