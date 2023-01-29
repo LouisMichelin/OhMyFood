@@ -60,7 +60,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  cursor: pointers;
+  cursor: pointer;
 }
 
 body {
